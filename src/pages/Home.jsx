@@ -1,8 +1,15 @@
-import React from 'react'
 
 const Home = () => {
+    const authToken= true;
   return (
-    <div>Home</div>
+    <div className="home">
+        <h1>Let's Connect</h1>
+        <button>
+            {authToken ? "Signout": "Create Account"}
+        </button>
+    </div>
+
+    
   )
 }
 

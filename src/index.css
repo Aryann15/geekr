@@ -29,6 +29,21 @@ html,body{
   background: linear-gradient(45deg,#172d73,#2779b8) ;
 }
 
+.secondary-button{
+  color: rgb(254, 254, 254);
+  background-color: #391773;
+  font-weight: 500px;
+  font-size: 15px ;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin: 6px;
+  border-radius: 10px;
+}
+
+.secondary-button:hover{
+  background-color: #210b47;
+}
+
 body{
   text-align: center;
 }
@@ -52,12 +67,18 @@ nav .logo-container .logo{
 
 nav .nav-button{
   color: #ffffff;
-  background: #7642c9;
+  background: #9b73db;
   font-size: 20px;
   padding: 10px 20px;
   border-radius: 10px;
   border: none;
   margin: 10px;
+
+}
+
+nav .nav-button:disabled{
+  color: #b8b8b8;
+  background: #5e2bb0;
 
 }
 /* Home page */
@@ -75,16 +96,15 @@ nav .nav-button{
 color: rgb(13, 57, 218);
 background: rgb(255, 14, 14);
 border: none;
-font-size: 20px;
-width: 20%;
-transform: translateX(200%);
-border-radius: 30px;
+font-size: 15px;
+width: 7%;
+border-radius: 50px;
 color: #eaeaea;
-position: relative;
-top: -20px;
+float: right;
 }
 
 .auth-model{
+  font-size: 30px;
   position: absolute;
   top: 330px;
   left: 50%;

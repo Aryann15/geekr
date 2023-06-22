@@ -23,3 +23,24 @@ html{
   background: linear-gradient(45deg, #472f69,#250854); ;
 }
 
+body{
+  text-align: center;
+}
+
+
+/* navbar */
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .logo-container  {
+  width: 130px;
+  margin: 15px;
+}
+
+nav .logo-container .logo{
+  width: 120%;
+}
+

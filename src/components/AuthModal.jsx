@@ -13,11 +13,22 @@ const AuthModal = ({ setShowModal }) => {
     setShowModal(false);
   };
 
+  const isSignUp = true;
+
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    try{
+        if(isSignUp && (password != confirmPassword)){
+            setError('passwords need to match');  
+        }
+        console.log("request to POST to our database");
+    }
+    catch(error){
+        console.log(error)
+    }
   };
 
-  const isSignUp = true;
 
   return (
     <div className="auth-model">
@@ -47,14 +58,14 @@ const AuthModal = ({ setShowModal }) => {
           onChange={(e) => setPassword(e.target.value)}
         />
         <input
-          type="password-check"
+          type="password"
           id="password-check"
           name="password-check"
           placeholder="confirm password"
           required={true}
           onChange={(e) => setConfirmPassword(e.target.value)}
         />
-        <input lassName="secondary-button" type="submit"/>
+        <input className="secondary-button" type="submit"/>
         <p>{error}</p>
 
       </form>

@@ -118,3 +118,17 @@ float: right;
   padding: 40px;
   border-radius: 50px;
 }
+
+.auth-model form{
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-model input{
+  padding: 8px;
+  margin: 8px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: none;
+
+}

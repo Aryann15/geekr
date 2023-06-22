@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const AuthModal = ({ setShowModal }) => {
+const AuthModal = ({ setShowModal, setIsSignUp, isSignUp }) => {
   const [email, setEmail] = useState(null);
   const [password,setPassword]= useState(null);
   const [confirmPassword,setConfirmPassword] = useState(null);
@@ -11,9 +11,9 @@ const AuthModal = ({ setShowModal }) => {
 
   const handleClick = () => {
     setShowModal(false);
+   setIsSignUp(true); 
   };
 
-  const isSignUp = true;
 
 
   const handleSubmit = (e) => {
@@ -57,14 +57,14 @@ const AuthModal = ({ setShowModal }) => {
           required={true}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <input
+        {isSignUp &&  <input
           type="password"
           id="password-check"
           name="password-check"
           placeholder="confirm password"
           required={true}
           onChange={(e) => setConfirmPassword(e.target.value)}
-        />
+        />}
         <input className="secondary-button" type="submit"/>
         <p>{error}</p>
 

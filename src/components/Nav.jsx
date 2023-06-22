@@ -1,6 +1,13 @@
-const Nav = () => {
+import logo from "../images/geekkkr.png"
+
+const Nav = ({authToken}) => {
   return (
-    <div>Nav</div>
+    <nav>
+        <div className="logo-container">
+            <img className='logo' src={logo} alt="" />
+        </div>
+        {!authToken && <button className="nav-button">Log in</button>}
+    </nav>
   )
 }
 

@@ -1,13 +1,25 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto+Slab&display=swap');
+
+html{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  font-family: 'Roboto Slab', serif;
 }
+
+.primary-button{
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  background: linear-gradient(45deg, #53288f,#7338d3);
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+.primary-button:hover{
+  background: linear-gradient(45deg, #472f69,#250854); ;
+}
+

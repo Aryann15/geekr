@@ -26,7 +26,7 @@ const [isSignUp,setIsSignUp] = useState(true)
           {authToken ? "Signout" : "Create Account"}
         </button>
 
-        {showModal && <AuthModal setShowModal={setShowModal} setIsSignUp={setIsSignUp} isSignUp={isSignUp}/>}
+        {showModal && <AuthModal setShowModal={setShowModal} isSignUp={isSignUp}/>}
       </div></div>
     </>
   );

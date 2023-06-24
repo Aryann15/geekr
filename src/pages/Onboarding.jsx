@@ -53,7 +53,8 @@ const Onboarding = () => {
                 onChange={handleChange}
               />
             </div>
-            <br></br><br></br>
+            <br></br>
+            <br></br>
             <label>Gender</label>
             <div className="multiple-input">
               <input
@@ -84,10 +85,10 @@ const Onboarding = () => {
                 checked={false}
               />
               <label htmlFor="more_gender_id">More</label>
-
-<br></br><br></br>
-              <label>Who are you?</label>
-              <div className="multiple-input">
+            </div>
+            <br></br>
+            <label>Who are you?</label>
+            <div className="multiple-input">
               <input
                 id="front_end_developer"
                 type="radio"
@@ -97,7 +98,7 @@ const Onboarding = () => {
                 checked={false}
               />
               <label htmlFor="front-end_dev">Front End Developer</label>
-              
+
               <input
                 id="backend_developer"
                 type="radio"
@@ -107,7 +108,7 @@ const Onboarding = () => {
                 checked={false}
               />
               <label htmlFor="backend_developer">Backend Developer</label>
-              
+
               <input
                 id="Fullstack_developer"
                 type="radio"
@@ -117,11 +118,11 @@ const Onboarding = () => {
                 checked={false}
               />
               <label htmlFor="Fullstack">Fullstack Developer</label>
+            </div>
 
-
-              <br></br><br></br>
-              <label>WHo would you like as a partner</label>
-              <div className="multiple-input">
+            <br></br>
+            <label>WHo would you like as a partner</label>
+            <div className="multiple-input">
               <input
                 id="front_end_developer-interest"
                 type="checkbox"
@@ -130,8 +131,10 @@ const Onboarding = () => {
                 onChange={handleChange}
                 checked={false}
               />
-              <label htmlFor="front-end_dev-interest">Front End Developer</label>
-              
+              <label htmlFor="front-end_dev-interest">
+                Front End Developer
+              </label>
+
               <input
                 id="backend_developer-interest"
                 type="checkbox"
@@ -140,8 +143,10 @@ const Onboarding = () => {
                 onChange={handleChange}
                 checked={false}
               />
-              <label htmlFor="backend_developer-interest">Backend Developer</label>
-              
+              <label htmlFor="backend_developer-interest">
+                Backend Developer
+              </label>
+
               <input
                 id="Fullstack_developer-interest"
                 type="checkbox"
@@ -151,9 +156,22 @@ const Onboarding = () => {
                 checked={false}
               />
               <label htmlFor="Fullstack-interest">Fullstack Developer</label>
-</div></div>
             </div>
+            <br></br>
+
+            <label htmlFor="about">About me</label>
+            <input 
+            id="about"
+            type="text"
+            name="about"
+            required={true}
+            placeholder=" I love javascript" 
+            value={""}
+            onChange={handleChange}
+            />
           </section>
+
+
         </form>
       </div>
     </>

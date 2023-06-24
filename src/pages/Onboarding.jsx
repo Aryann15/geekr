@@ -118,7 +118,40 @@ const Onboarding = () => {
               />
               <label htmlFor="Fullstack">Fullstack Developer</label>
 
-</div>
+
+              <br></br><br></br>
+              <label>WHo would you like as a partner</label>
+              <div className="multiple-input">
+              <input
+                id="front_end_developer-interest"
+                type="checkbox"
+                name="front-end-interest"
+                value="front_end_developer-interest"
+                onChange={handleChange}
+                checked={false}
+              />
+              <label htmlFor="front-end_dev-interest">Front End Developer</label>
+              
+              <input
+                id="backend_developer-interest"
+                type="checkbox"
+                name="backend-interest"
+                value="backend_developer-interest"
+                onChange={handleChange}
+                checked={false}
+              />
+              <label htmlFor="backend_developer-interest">Backend Developer</label>
+              
+              <input
+                id="Fullstack_developer-interest"
+                type="checkbox"
+                name="fullstack_developer-interest"
+                value="fullstack-dev-interest"
+                onChange={handleChange}
+                checked={false}
+              />
+              <label htmlFor="Fullstack-interest">Fullstack Developer</label>
+</div></div>
             </div>
           </section>
         </form>
